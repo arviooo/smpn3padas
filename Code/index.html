@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Opening</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      height: 100dvh;
+      width: 100dvw;
+      background-color: #fff;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top-right,
+    .bottom-left {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background-color: #1e90ff;
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .top-right {
+      top: -75px;
+      right: -150px;
+    }
+
+    .bottom-left {
+      bottom: -200px;
+      left: -75px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+      padding: 20px;
+      z-index: 1;
+    }
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 60px auto 40px 90px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ddd;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+    }
+
+    h1, h3 {
+      font-weight: 700;
+      margin-left: 60px;
+      color: #000;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    /* Fokus pada mobile, bisa ditambah media query untuk desktop kalau butuh */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="../Code/logoSMP.png" alt="Logo SMP Negeri 3 Satu Atap" />
+    </div>
+    <h1>SMP NEGERI 3 SATU ATAP</h1>
+    <h3>KEDUNGJATI</h3>
+  </div>
+
+  <script>
+    // Setelah 3 detik, redirect ke tampilanAwal.html
+    setTimeout(function() {
+      window.location.href = "tampilanAwal.html";
+    }, 10000);
+  </script>
+</body>
+</html>
